@@ -9,7 +9,7 @@ A real-time two-player snake battle game built with Python and Pygame, using a c
 - **Online multiplayer** — challenge any connected player from the lobby
 - **Bot opponent** — play solo against a server-side AI
 - **Spectator mode** — watch ongoing matches live
-- **Text chat** — communicate with other players during and between games
+- **Text chat** — communicate with other players during games
 - **Multiple pie types** — normal (+10 HP), gold (+25 HP), and bad (−15 HP)
 - **Health-based snake length** — your snake grows and shrinks with your HP
 - **Collision stun** — collisions deal damage and temporarily freeze your snake
@@ -125,7 +125,7 @@ Each client will open a Pygame window and prompt you to enter a username.
 
 ### In-Game (default controls)
 
-Player 1 uses the **arrow keys**. Player 2 uses **WASD** in a two-player match; in a bot match, the human always uses their profile keybinds.
+Player uses the **arrow keys**.
 
 | Key | Action |
 |-----|--------|
@@ -142,7 +142,7 @@ Player 1 uses the **arrow keys**. Player 2 uses **WASD** in a two-player match; 
 | Collect a bad pie | −15 HP |
 | Collide with a wall, obstacle, or snake | −25 HP + 1 s stun |
 
-The match ends when a player's HP reaches 0 or when the time limit expires. The player with more HP at the end wins.
+The match ends when a player's HP reaches 0 or when the time limit expires or a player's HP reaches 1000. The player with more HP at the end wins.
 
 ---
 
